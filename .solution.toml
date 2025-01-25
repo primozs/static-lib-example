@@ -1,0 +1,8 @@
+[app]
+entry_point = "./app/src/main.cpp"
+files = "./app/src/*.cpp"
+output = "./bin/app"
+arguments = "-std=c++23 -Wall -Wextra -Wshadow -Wconversion -Wpedantic -fsanitize=undefined,address"
+
+[SOLUTION]
+executable = "./bin/app"
