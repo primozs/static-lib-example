@@ -1,0 +1,10 @@
+-std=c++20
+-Wall
+-Wextra
+-Wfloat-equal
+-Wshadow
+-Wconversion
+-Wpedantic
+-fsanitize=undefined,address
+-I
+./engine-static/src

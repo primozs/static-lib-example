@@ -1,8 +1,15 @@
-[app]
+[program]
 entry_point = "./app/src/main.cpp"
 files = "./app/src/*.cpp"
-output = "./bin/app"
-arguments = "-std=c++23 -Wall -Wextra -Wshadow -Wconversion -Wpedantic -fsanitize=undefined,address"
+output = "./bin/program"
+arguments = "-ggdb -I./engine-static/src -L./bin -lengine -std=c++20 -Wall -Wextra -Wfloat-equal -Wshadow -Wconversion -Wpedantic -fsanitize=undefined,address"
+
+[release]
+entry_point = "./app/src/main.cpp"
+files = "./app/src/*.cpp"
+output = "./bin/release"
+arguments = "-O2 -DNDEBUG -I./engine-static/src -L./bin -lengine -std=c++20 -Wall -Wextra -Wfloat-equal -Wshadow -Wconversion -Wpedantic -fsanitize=undefined,address"
 
 [SOLUTION]
-executable = "./bin/app"
+executable = "./bin/program"
+executable1 = "./bin/release"

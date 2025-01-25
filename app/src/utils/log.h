@@ -7,5 +7,6 @@ void log3(const char* str);
 template <typename... Args>
 void log(Args... args) {
    ((std::cout << args << ", "), ...);
+   std::cout << "\n";
 }
 }  // namespace utils
