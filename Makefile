@@ -1,5 +1,10 @@
 CC = g++
-CFLAGS = -std=c++23 -Wall -Wextra -Wshadow -Wconversion -Wpedantic -fsanitize=undefined,address
+CFLAGS = -std=c++23 -Wall -Wextra -Wfloat-equal -Wshadow -Wconversion -Wpedantic -fsanitize=undefined,address
+
+# https://caiorss.github.io/C-Cpp-Notes/compiler-flags-options.html
+# -O2 optimization level
+# -g debug symbols
+# -p profile
 
 .PHONY: all
 all: ./bin/program
