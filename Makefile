@@ -5,7 +5,7 @@
 # -p profile
 
 CC = g++
-CFLAGS = -std=c++20 -Wall -Wextra -Wfloat-equal -Wshadow -Wconversion -Wpedantic -fsanitize=undefined,address
+CFLAGS = -std=c++20 -Wall -Wextra -Wfloat-equal -Wshadow -Wconversion -Wpedantic -Werror=type-limits -fsanitize=undefined,address
 CINCLUDE = -I./engine-static/src -L./bin -lengine
 
 .PHONY: all
